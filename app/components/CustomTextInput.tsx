@@ -7,7 +7,7 @@ type CustomTextInputProps = {
   value: string;
   onChangeText: (text: string) => void;
   errorMessage: string;
-  editable?: boolean
+  editable?: boolean;
   secureText?: boolean;
   backgroundColor?: string;
   containerStyle?: string;

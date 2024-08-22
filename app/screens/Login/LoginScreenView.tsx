@@ -41,7 +41,7 @@ const LoginScreenView = ({
               textContent={'Loading...'}
               color="orange"
             />
-            <Text className="text-3xl text-red-300">Welcom back!</Text>
+            <Text className="text-3xl text-red-300">Welcome back!</Text>
             <Text className="text-3xl text-orange-400">Let's start now</Text>
             <Image
               source={{

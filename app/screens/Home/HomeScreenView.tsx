@@ -3,14 +3,14 @@ import {View, FlatList, ActivityIndicator} from 'react-native';
 
 import ProductCard from '../../components/ProductCard';
 
-import {productType, HomeScreenViewProps} from './Hometypes';
+import {productType, HomeScreenViewProps} from './HomeTypes';
 
 const HomeScreenView = ({
   initialLoading,
   products,
   page,
   flatListLoading,
-  refreshFlatlist,
+  refreshFlatList,
   setPage,
 }: HomeScreenViewProps) => {
   const keyExtractor = (item: productType, index: number) =>
@@ -51,7 +51,7 @@ const HomeScreenView = ({
               onEndReached={() => setPage(prevPage => prevPage + 1)}
               onEndReachedThreshold={0.1}
               ListFooterComponent={renderFooter}
-              extraData={refreshFlatlist}
+              extraData={refreshFlatList}
             />
           </View>
         </View>

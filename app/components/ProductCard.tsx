@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {TouchableOpacity, Text, Image, View} from 'react-native';
 import OcticonsIcons from 'react-native-vector-icons/Octicons';
-import {productType, HomeScreenViewProps} from '../screens/Home/Hometypes';
+import {productType, HomeScreenViewProps} from '../screens/Home/HomeTypes';
 
 const ProductCard = ({
   id,

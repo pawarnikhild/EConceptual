@@ -15,7 +15,7 @@ export type HomeScreenViewProps = {
     products: productsType,
     page: number
     flatListLoading: boolean
-    refreshFlatlist: boolean
+    refreshFlatList: boolean
     setPage: SetPage
 }
 

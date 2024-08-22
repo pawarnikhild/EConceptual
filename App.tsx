@@ -8,7 +8,6 @@ import HomeScreen from './app/screens/Home/HomeScreen'
 import ProfileScreen from './app/screens/Profile/ProfileScreen'
 import MainStackNavigation from './app/routes/MainStackNavigation'
 import SplashScreen from './app/screens/Splash/SplashScreen'
-import ToastExp from './app/experimental/ToastExp'
 
 const App = () => {
   const [token, setToken] = useState('');

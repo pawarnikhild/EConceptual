@@ -4,7 +4,7 @@ import {Alert} from 'react-native';
 import AuthContext from '../../context/AuthContext';
 import {fetchProducts} from '../../services/product-services';
 
-import {productsType} from './Hometypes';
+import {productsType} from './HomeTypes';
 import HomeScreenView from './HomeScreenView';
 
 const HomeScreen = () => {
@@ -21,7 +21,7 @@ const HomeScreen = () => {
   const [initialLoading, setInitialLoading] = useState(true);
   const [flatListLoading, setFlatListLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [refreshFlatlist, setRefreshFlatList] = useState(false);
+  const [refreshFlatList, setRefreshFlatList] = useState(false);
 
   useEffect(() => {
     loadProducts();
@@ -37,7 +37,7 @@ const HomeScreen = () => {
       const result = await fetchProducts(page, token);
       if (result) {
         setProducts(prevProducts => [...prevProducts, ...result]);
-        setRefreshFlatList(!refreshFlatlist);
+        setRefreshFlatList(!refreshFlatList);
         console.log('Product data fetched from page', page);
       } else {
         Alert.alert('Failure in data fetching', result.error);
@@ -54,7 +54,7 @@ const HomeScreen = () => {
     }
   };
 
-  console.log('refreshFlatlist', refreshFlatlist);
+  console.log('refreshFlatList', refreshFlatList);
   console.log('products', products);
 
   return (
@@ -63,7 +63,7 @@ const HomeScreen = () => {
       products={products}
       page={page}
       flatListLoading={flatListLoading}
-      refreshFlatlist={refreshFlatlist}
+      refreshFlatList={refreshFlatList}
       setPage={setPage}
     />
   );

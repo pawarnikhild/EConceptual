@@ -96,7 +96,7 @@ const ProfileScreenView = ({
                 Country
               </Text>
               <CustomTextInput
-                placeholder="Enter your coutry"
+                placeholder="Enter your country"
                 value={profile.country}
                 editable={editMode}
                 onChangeText={text =>
